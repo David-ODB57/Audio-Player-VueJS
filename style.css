@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt&display=swap');
+
+body {
+    background-color: black;
+    font-family: 'Rock Salt', cursive;
+}
+
+div.control, a {
+    cursor: pointer;
+}
+
+#mp {
+    color: blanchedalmond;
+}
+
+
+img {
+    margin: 2vh 0;
+}
+
+h1, h6 {
+    color: #f4032b;
+    font-size: 7vw;
+    text-shadow: 0 0 5px #f4032b,
+    0 0 25px #f4032b,
+    0 0 50px #f4032b,
+    0 0 200px #f4032b;
+}
+
+h6 {
+    font-size: 3vw;
+}
+
+.player-controls > div {
+    border: 1px solid #f4032b;
+    border-radius: 5px;
+}
+
+.buttons i {
+    font-size: 4vh;
+}
+
+.player-controls .progress-bar-timer:hover, .player-controls.buttons > div:hover {
+    box-shadow: 0 0 5px #f4032b,
+                0 0 25px #f4032b,
+                0 0 50px #f4032b,
+                0 0 100px #f4032b;
+}
+
+.player-controls.buttons > div {
+    flex-basis: auto;
+    flex-grow: 1;
+    height: 6vh;
+}
+
+.volume-bar{
+    flex-grow: 2;
+}
+
+.player-controls div a {
+    padding: 1vh 1vh;
+    text-decoration: none;
+    color: #f4032b;
+}
+
+.player-progress {
+    background: #f4032b;
+    opacity: 0.5;
+	cursor: pointer;
+	min-height: 4vh;
+	width: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.player-seeker {
+    background: black;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    border-radius: 10px 10px 0 0;
+    z-index: -3;
+}
+
+.player-time {
+    height: 100%;
+    padding-bottom: .5vh;
+    font-size: 4vw;
+}
+
+.player-time-current {
+    font-weight: 700;
+    padding-left: 2vw;
+}
+
+.player-time-total {
+    font-weight: 700;
+    padding-right: 2vw;
+}
+
+li {
+    font-size: 4vw;
+}
+
+li:hover {
+    color: #fdfdfd;
+    text-shadow: 0 0 5px #f4032b,
+                0 0 25px #f4032b,
+                0 0 50px #f4032b,
+                0 0 200px #f4032b;
+    cursor: pointer;
+}
+
+.currentlyPlayed {
+    color: #f4032b;
+    text-shadow: 0 0 5px #f4032b,
+                0 0 25px #f4032b,
+                0 0 50px #f4032b,
+                0 0 200px #f4032b;
+}
+
+div.control:first-child, div.control + div.control {
+    margin-right: 1vw;
+}
+
+/*==============================*/
+/*      Custom slider-range     */
+/*==============================*/
+input[type=range].custom-slider.custom-slider-saber {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 1em;
+    color: #FFF;
+    border-radius: 50%;
+    background: transparent;
+    background-image: linear-gradient(to bottom, rgb(255, 0, 0), rgb(255, 255, 255), rgb(255, 0, 0));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 25%;
+  }
+
+  /*==============================*/
+  /*            Curseur           */
+  /*==============================*/
+  input[type=range].custom-slider.custom-slider-saber::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    max-width: 2em;
+    height: 100%;
+    padding: 0.25em;
+    border: none;
+    background: url(img/saber.png)center no-repeat;
+    background-size: 100%;
+  }
+
+  input[type=range].custom-slider.custom-slider-saber::-moz-range-thumb {
+    -webkit-appearance: none; 
+    max-width: 2em;
+    height: 100%;
+    padding: 0.25em;
+    border: none;
+    background: url(img/saber.png)center no-repeat;
+    background-size: 100%;
+  }
+
+  /*==============================*/
+  /*         Média Queries        */
+  /*==============================*/
+  @media screen 
+    and (max-width: 540px) {
+
+        input[type=range].custom-slider.custom-slider-saber {
+            font-size: 8vw;
+        }
+  }
