@@ -1,2 +1,2 @@
 # Audio-Player-VueJS
-Project VueJS I did during my training.
+VueJS project I did during my training.
