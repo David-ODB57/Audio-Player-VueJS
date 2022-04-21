@@ -1,2 +1,2 @@
 # Audio-Player-VueJS
-VueJS project I did during my training.
+Projet réalisé au cours de ma formation en développment Web et Web mobile
