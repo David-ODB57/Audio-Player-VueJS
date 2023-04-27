@@ -1,2 +1,2 @@
 # Audio-Player-VueJS
-Projet réalisé au cours de ma formation en développment Web et Web mobile
+Projet réalisé au cours de ma formation en développement Web et Web mobile
